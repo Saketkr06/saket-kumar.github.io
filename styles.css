@@ -32,7 +32,7 @@ section {
     margin: 2rem 0;
 }
 
-section#about {
+section#about, section#projects, section#contact, section#social {
     background: #f4f4f4;
 }
 
@@ -50,4 +50,10 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
