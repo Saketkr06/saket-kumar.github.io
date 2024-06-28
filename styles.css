@@ -60,8 +60,8 @@ img {
 
 /* Add this new style for the profile image */
 .profile-image {
-    width: 500px;
-    height: 500px;
+    width: 1000px;
+    height: 1000px;
     object-fit: cover;
     display: block;
     margin: 1rem auto;
