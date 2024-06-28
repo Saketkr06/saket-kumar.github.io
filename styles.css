@@ -57,3 +57,12 @@ img {
     height: auto;
     border-radius: 50%;
 }
+
+/* Add this new style for the profile image */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 1rem auto;
+}
