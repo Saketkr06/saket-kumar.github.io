@@ -37,9 +37,15 @@ body.light-theme {
   --acc: #b05e1a;                 /* Burnt orange-amber accent */
   --acc-glow: rgba(176, 94, 26, 0.2);
   --acc2: #b03c1a;
-  --nav-bg: rgba(245, 239, 230, 0.75);
-  --nav-bg-scroll: rgba(245, 239, 230, 0.95);
+  --nav-bg: rgba(245, 239, 230, 0.85);
+  --nav-bg-scroll: rgba(245, 239, 230, 0.97);
   --nav-shadow: 0 4px 30px rgba(100, 70, 40, 0.1);
+
+  /* Override the hardcoded dark-mode radial gradients */
+  background: #f5efe6;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(176, 94, 26, 0.04), transparent 30%),
+    radial-gradient(circle at 85% 30%, rgba(176, 60, 26, 0.03), transparent 30%);
 }
 
 #theme-toggle {
