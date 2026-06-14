@@ -26,20 +26,20 @@
 }
 
 body.light-theme {
-  --bg: #faf8f5; /* Paper-like white */
-  --bg-gradient: linear-gradient(135deg, #faf8f5 0%, #f0ede6 100%);
-  --sur: rgba(255, 255, 255, 0.6);
-  --sur-hover: rgba(255, 255, 255, 0.9);
-  --brd: rgba(0, 0, 0, 0.08);
-  --muted: #6b7280;
-  --body: #374151;
-  --bright: #111827;
-  --acc: #00a37a; /* Darker mint for visibility on light bg */
-  --acc-glow: rgba(0, 163, 122, 0.2);
-  --acc2: #e60000;
-  --nav-bg: rgba(250, 248, 245, 0.7);
-  --nav-bg-scroll: rgba(250, 248, 245, 0.9);
-  --nav-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --bg: #f5efe6;                  /* Warm parchment */
+  --bg-gradient: linear-gradient(135deg, #f5efe6 0%, #ece4d6 100%);
+  --sur: rgba(255, 248, 237, 0.75);
+  --sur-hover: rgba(255, 248, 237, 0.95);
+  --brd: rgba(139, 100, 60, 0.15);
+  --muted: #8a7560;               /* Warm muted brown */
+  --body: #3d2f20;                /* Deep warm brown for body text */
+  --bright: #1f150a;              /* Near-black warm brown for headings */
+  --acc: #b05e1a;                 /* Burnt orange-amber accent */
+  --acc-glow: rgba(176, 94, 26, 0.2);
+  --acc2: #b03c1a;
+  --nav-bg: rgba(245, 239, 230, 0.75);
+  --nav-bg-scroll: rgba(245, 239, 230, 0.95);
+  --nav-shadow: 0 4px 30px rgba(100, 70, 40, 0.1);
 }
 
 #theme-toggle {
@@ -852,9 +852,28 @@ footer {
   }
 }
 
-/* ── LIGHT THEME NAV ─────────────────────────────────────────── */
+/* ── LIGHT THEME OVERRIDES ───────────────────────────────────── */
 body.light-theme .hero-name {
-  background: linear-gradient(90deg, #111827, #374151);
+  background: linear-gradient(90deg, #1f150a, #6b4226);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+body.light-theme .contact-card:hover {
+  box-shadow: 0 10px 30px rgba(176, 94, 26, 0.12);
+}
+
+body.light-theme .contact-card-icon {
+  background: rgba(176, 94, 26, 0.08);
+  border-color: rgba(176, 94, 26, 0.2);
+}
+
+body.light-theme .tag {
+  background: rgba(176, 94, 26, 0.08);
+  color: #7a3e10;
+  border-color: rgba(176, 94, 26, 0.2);
+}
+
+body.light-theme .section-label::before {
+  background: var(--acc);
 }
