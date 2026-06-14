@@ -779,10 +779,13 @@ footer {
 
 /* ── CONTACT CARDS ───────────────────────────────────────────── */
 .contact-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
   gap: 1.5rem;
-  max-width: 800px;
+  max-width: 860px;
   margin: 0 auto;
 }
 
@@ -791,7 +794,9 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 2.5rem 2rem;
+  flex: 1;
+  min-width: 0;
+  padding: 2.5rem 1.5rem;
   background: var(--sur);
   border: 1px solid var(--brd);
   border-radius: 12px;
@@ -842,7 +847,8 @@ footer {
 
 @media (max-width: 640px) {
   .contact-cards {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 
