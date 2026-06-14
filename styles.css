@@ -259,6 +259,11 @@ nav.scrolled {
   animation: fadeInUp 0.8s ease 0.3s backwards;
 }
 
+.hero-desc strong {
+  color: var(--bright);
+  font-weight: 600;
+}
+
 /* Buttons */
 .btn-group {
   display: flex;
