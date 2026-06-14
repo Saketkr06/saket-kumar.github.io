@@ -27,13 +27,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector("nav");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-      nav.style.background = "rgba(5, 5, 5, 0.9)";
-      nav.style.boxShadow = "0 4px 30px rgba(0, 0, 0, 0.5)";
+      nav.classList.add("scrolled");
     } else {
-      nav.style.background = "rgba(5, 5, 5, 0.7)";
-      nav.style.boxShadow = "none";
+      nav.classList.remove("scrolled");
     }
   });
+
+  // Theme Toggle
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("light-theme");
+      const isLight = document.body.classList.contains("light-theme");
+      localStorage.setItem("theme", isLight ? "light" : "dark");
+    });
+
+    // Check saved theme
+    if (localStorage.getItem("theme") === "light") {
+      document.body.classList.add("light-theme");
+    }
+  }
 
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
