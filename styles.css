@@ -64,13 +64,23 @@ body.light-theme {
   background: rgba(0, 255, 204, 0.05);
 }
 
-/* Sun hidden by default in dark mode */
-#theme-toggle .icon-sun { display: none; }
-#theme-toggle .icon-moon { display: block; }
+/* Sun hidden by default (dark mode) */
+#theme-toggle .icon-sun {
+  display: none;
+  pointer-events: none;
+}
+#theme-toggle .icon-moon {
+  display: flex;
+  pointer-events: none;
+}
 
 /* In light mode: show sun, hide moon */
-body.light-theme #theme-toggle .icon-sun { display: block; }
-body.light-theme #theme-toggle .icon-moon { display: none; }
+body.light-theme #theme-toggle .icon-sun {
+  display: flex;
+}
+body.light-theme #theme-toggle .icon-moon {
+  display: none;
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
