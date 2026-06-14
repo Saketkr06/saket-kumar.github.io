@@ -1,34 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saket Kumar's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saket Kumar — Model Governance & ML</title>
+  
+  <meta name="description" content="Portfolio of Saket Kumar, Senior Manager in Model Governance and AI/ML Engineering based in Bengaluru, India. Explore credit risk modeling, ML projects, and work experience." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="social.html">Social</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello! I'm Saket Kumar, a Master of Business Analytics student in Department of Manangement Studies at the Indian Institute of Science, Bangalore.I'm navigating the exciting world of data science and machine learning. With a toolkit full of advanced analytics, I dive deep into Mathematics, Finance, Operations Research, and Economic theories to uncover insights that drive strategic decisions</p>
-        <img src="images/iisc_logo.jpg" alt="Indian Institute of Science" class="institution-image">
-    </section>
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#hero">saket_kumar.init()</a>
+  <ul class="nav-links">
+    <li><a href="#experience">Work</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-    <footer>
-        <p>&copy; 2024 Saket Kumar. All rights reserved.</p>
-    </footer>
+<!-- HERO -->
+<section id="hero" class="container hero">
+  <p class="hero-eyebrow">// Bengaluru, India</p>
+  <h1 class="hero-name">Saket<br/>Kumar</h1>
+  <p class="hero-title">Senior Manager — Model Governance &amp; AI/ML</p>
+  <p class="hero-desc">
+    Credit risk modeler and ML engineer at Kotak Mahindra Bank. I build and validate models that underwrite credit at scale — then ship ML systems that explain what they decide.
+  </p>
 
-    <script src="js/main.js"></script>
+  <div class="btn-group">
+    <a class="btn btn-primary" href="Saket_Kumar_Resume.pdf" download>↓ Resume</a>
+    <a class="btn btn-ghost" href="#projects">View Projects</a>
+    <a class="btn btn-ghost" href="https://linkedin.com/in/saketkr06" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="btn btn-ghost" href="https://github.com/saketkr06" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker">
+    <span class="ticker-item"><span>▸</span>Credit Risk Modeling</span>
+    <span class="ticker-item"><span>▸</span>Model Governance · SR 11-7</span>
+    <span class="ticker-item"><span>▸</span>XGBoost · LightGBM · LSTM</span>
+    <span class="ticker-item"><span>▸</span>RAG Pipelines</span>
+    <span class="ticker-item"><span>▸</span>QLoRA Fine-tuning</span>
+    <span class="ticker-item"><span>▸</span>PSI · CSI · KS · GINI</span>
+    <span class="ticker-item"><span>▸</span>LangGraph · FastAPI</span>
+    <span class="ticker-item"><span>▸</span>IFRS 9 · Basel IRB</span>
+    <span class="ticker-item"><span>▸</span>WoE · IV · Scorecards</span>
+    <span class="ticker-item"><span>▸</span>Azure · Airflow · Power BI</span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item"><span>▸</span>Credit Risk Modeling</span>
+    <span class="ticker-item"><span>▸</span>Model Governance · SR 11-7</span>
+    <span class="ticker-item"><span>▸</span>XGBoost · LightGBM · LSTM</span>
+    <span class="ticker-item"><span>▸</span>RAG Pipelines</span>
+    <span class="ticker-item"><span>▸</span>QLoRA Fine-tuning</span>
+    <span class="ticker-item"><span>▸</span>PSI · CSI · KS · GINI</span>
+    <span class="ticker-item"><span>▸</span>LangGraph · FastAPI</span>
+    <span class="ticker-item"><span>▸</span>IFRS 9 · Basel IRB</span>
+    <span class="ticker-item"><span>▸</span>WoE · IV · Scorecards</span>
+    <span class="ticker-item"><span>▸</span>Azure · Airflow · Power BI</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="container reveal" style="padding-top: 0; padding-bottom: 2rem;">
+  <div class="stats-row">
+    <div class="stat-cell">
+      <div class="stat-num">2+</div>
+      <div class="stat-label">Years in Credit Risk &amp; Model Governance</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">₹550Cr+</div>
+      <div class="stat-label">Incremental Business via MFI Challenger Model</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">+10%</div>
+      <div class="stat-label">GINI Lift on MFI Scorecard</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">AIR 6</div>
+      <div class="stat-label">GATE 2022 · All India</div>
+    </div>
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="container reveal">
+  <p class="section-label">01 — Work Experience</p>
+  <h2 class="section-title">Where I've worked</h2>
+
+  <div class="exp-item reveal">
+    <div class="exp-meta">
+      <strong>Current</strong><br/>
+      <span class="exp-company">Kotak Mahindra Bank</span>
+      <span>2023 – Present · Bengaluru</span>
+    </div>
+    <div>
+      <p class="exp-role">Senior Manager — Model Governance (M4)</p>
+      <ul class="exp-bullets">
+        <li>Built <strong>MFI Challenger Scorecard</strong> (WoE/IV pipeline, logistic regression + XGBoost ensemble) delivering <strong>+10% GINI lift</strong> and enabling ₹550Cr+ incremental disbursement.</li>
+        <li>Designed <strong>Consumer-level Exposure Cap Framework</strong> across 15,000+ features using B-Score and a 3-gate decisioning logic, deployed via Airflow DAG on Azure.</li>
+        <li>Led model validation for PD, LGD, and EAD models per <strong>RBI and Basel IRB</strong> guidelines — PSI, CSI, KS, GINI, AUC tracking with champion-challenger infrastructure.</li>
+        <li>Built Customer-Level Exposure Management <strong>Power BI Dashboard</strong> with drill-through, bookmark navigation, and Franchise Base Waterfall analytics.</li>
+        <li>Promoted M3 → M4 with <strong>"Over Achiever" PRAISE rating</strong>.</li>
+      </ul>
+      <div class="tags-wrap">
+        <span class="tag">Credit Risk</span>
+        <span class="tag">Model Validation</span>
+        <span class="tag">XGBoost</span>
+        <span class="tag">Azure Airflow</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">RBI Guidelines</span>
+        <span class="tag">IFRS 9</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="exp-item reveal">
+    <div class="exp-meta">
+      <strong>Internship</strong><br/>
+      <span class="exp-company">Bosch Global</span>
+      <span>Jun – Jul 2023 · Bengaluru</span>
+    </div>
+    <div>
+      <p class="exp-role">Data Scientist Intern</p>
+      <ul class="exp-bullets">
+        <li>Built <strong>EV range prediction system</strong> on BMW i3 (60Ah) data — Random Forest achieved R² 0.96, MAE 0.006; deployed on AWS EC2 as a digital twin.</li>
+        <li>Developed <strong>vehicular ad-hoc routing model</strong> predicting connectivity duration using BSM signals; benchmarked 5 ML classifiers on Open Street Map dataset.</li>
+      </ul>
+      <div class="tags-wrap">
+        <span class="tag">Random Forest</span>
+        <span class="tag">Deep Neural Networks</span>
+        <span class="tag">AWS EC2</span>
+        <span class="tag">EV Telematics</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container reveal">
+  <p class="section-label">02 — Projects</p>
+  <h2 class="section-title">Things I've built</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card reveal">
+      <p class="project-card-label">ML Trading</p>
+      <h3>AlphaBot</h3>
+      <p>NSE intraday trading ensemble (XGBoost, LightGBM, Random Forest, LSTM, Logistic Regression) with Gemini-powered explainability and GitHub Actions CI/CD. Includes VIX regime filter, fixed KFold leakage, and live signal pipeline.</p>
+      <div class="tags-wrap">
+        <span class="tag">XGBoost</span><span class="tag">LightGBM</span><span class="tag">LSTM</span><span class="tag">Gemini API</span><span class="tag">GitHub Actions</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="project-card-label">ML Trading</p>
+      <h3>BetaBot</h3>
+      <p>Nifty 500 swing and breakout detection bot powered by XGBoost. Screens for momentum setups, generates daily watchlists, and applies breakout confirmation logic for position entry signals.</p>
+      <div class="tags-wrap">
+        <span class="tag">XGBoost</span><span class="tag">Nifty 500</span><span class="tag">Swing Trading</span><span class="tag">Python</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="project-card-label">Agentic AI</p>
+      <h3>Fraud Detection System</h3>
+      <p>Agentic fraud detection pipeline built with LangGraph + FastAPI + XGBoost/IsolationForest ensemble. Multi-agent orchestration handles feature extraction, anomaly flagging, and explainable alert generation.</p>
+      <div class="tags-wrap">
+        <span class="tag">LangGraph</span><span class="tag">FastAPI</span><span class="tag">XGBoost</span><span class="tag">IsolationForest</span><span class="tag">LLM</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="project-card-label">LLM Fine-tuning</p>
+      <h3>TinyLlama Credit Risk NLP</h3>
+      <p>QLoRA fine-tuning of TinyLlama for credit risk NLP tasks — DPD classification and RBI regulatory Q&A. Implemented NF4 quantization, double quantization, and paged Adam optimizers for memory-efficient training.</p>
+      <div class="tags-wrap">
+        <span class="tag">QLoRA</span><span class="tag">TinyLlama</span><span class="tag">NF4</span><span class="tag">HuggingFace</span><span class="tag">PEFT</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="project-card-label">Deep Learning</p>
+      <h3>GPT-2 from Scratch</h3>
+      <p>Full GPT-2 architecture implementation in TensorFlow following Andrej Karpathy's approach — multi-head self-attention, positional encoding, causal masking, and pre-LN transformer blocks.</p>
+      <div class="tags-wrap">
+        <span class="tag">TensorFlow</span><span class="tag">Transformers</span><span class="tag">GPT-2</span><span class="tag">Attention</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="project-card-label">Computer Vision</p>
+      <h3>Distracted Driver Detection</h3>
+      <p>CNN ensemble (VGG-16 fine-tuned) for driver distraction classification with 99.5%+ validation accuracy across multiple distraction classes. Applied augmentation and ensemble stacking for robustness.</p>
+      <div class="tags-wrap">
+        <span class="tag">CNN</span><span class="tag">VGG-16</span><span class="tag">PyTorch</span><span class="tag">Image Augmentation</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="container reveal">
+  <p class="section-label">03 — Skills</p>
+  <h2 class="section-title">Toolkit</h2>
+
+  <div class="skills-grid">
+    <div class="skill-group reveal">
+      <p class="skill-group-label">Credit Risk &amp; Model Governance</p>
+      <div class="skill-chips">
+        <span class="chip">PD / LGD / EAD</span>
+        <span class="chip">Scorecards · WoE · IV</span>
+        <span class="chip">PSI / CSI</span>
+        <span class="chip">KS · GINI · AUC</span>
+        <span class="chip">Champion-Challenger</span>
+        <span class="chip">IFRS 9</span>
+        <span class="chip">Basel IRB</span>
+        <span class="chip">RBI Guidelines</span>
+        <span class="chip">SR 11-7</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal">
+      <p class="skill-group-label">Machine Learning &amp; AI</p>
+      <div class="skill-chips">
+        <span class="chip">XGBoost</span>
+        <span class="chip">LightGBM</span>
+        <span class="chip">Random Forest</span>
+        <span class="chip">LSTM</span>
+        <span class="chip">Transformers (GPT-2)</span>
+        <span class="chip">SHAP</span>
+        <span class="chip">IsolationForest</span>
+        <span class="chip">CNN · VGG-16</span>
+        <span class="chip">LangGraph</span>
+        <span class="chip">RAG Pipelines</span>
+        <span class="chip">QLoRA · PEFT</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal">
+      <p class="skill-group-label">Engineering &amp; Infrastructure</p>
+      <div class="skill-chips">
+        <span class="chip">Python</span>
+        <span class="chip">FastAPI</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Azure</span>
+        <span class="chip">Apache Airflow</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">GitHub Actions</span>
+        <span class="chip">AWS EC2</span>
+        <span class="chip">TensorFlow</span>
+        <span class="chip">HuggingFace</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="container reveal">
+  <p class="section-label">04 — Education</p>
+  <h2 class="section-title">Academic background</h2>
+
+  <div class="edu-item reveal">
+    <div class="edu-meta">2022 – 2024</div>
+    <div>
+      <p class="edu-degree">M.Mgmt in Business Analytics (Distinction)</p>
+      <p class="edu-inst">Indian Institute of Science, Bangalore — Dept. of Management Studies</p>
+      <p class="edu-note">GATE 2022 AIR-6 · CGPA 8.3 / 10</p>
+    </div>
+  </div>
+
+  <div class="edu-item reveal">
+    <div class="edu-meta">2018 – 2022</div>
+    <div>
+      <p class="edu-degree">B.Tech</p>
+      <p class="edu-inst">University of Agricultural Sciences, Bangalore</p>
+      <p class="edu-note">CGPA 8.47 / 10 · National Talent Scholarship awardee</p>
+    </div>
+  </div>
+
+  <div class="edu-item reveal">
+    <div class="edu-meta">2016 – 2018</div>
+    <div>
+      <p class="edu-degree">Class XII — CBSE</p>
+      <p class="edu-inst">Indian Public School, Purnia, Bihar</p>
+      <p class="edu-note">84.6%</p>
+    </div>
+  </div>
+
+  <div class="edu-item reveal">
+    <div class="edu-meta">2014 – 2016</div>
+    <div>
+      <p class="edu-degree">Class X — CBSE</p>
+      <p class="edu-inst">Millia Convent English School, Purnia, Bihar</p>
+      <p class="edu-note">10/10 CGPA</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+  <div class="container" style="padding-top: 0; padding-bottom: 0;">
+    <p class="section-label" style="justify-content: center; margin-bottom: 1.5rem;">
+      <span style="display:none"></span>05 — Contact<span style="display:none"></span>
+    </p>
+    <h2>Let's connect</h2>
+    <p>Open to senior credit risk, model validation, and AI/ML engineering conversations. Best reached on LinkedIn or email.</p>
+    <div class="btn-group" style="justify-content: center;">
+      <a class="btn btn-primary" href="mailto:saketkr06@gmail.com">saketkr06@gmail.com</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/saketkr06" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn btn-ghost" href="https://github.com/saketkr06" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Saket Kumar — Bengaluru, India &nbsp;·&nbsp; Built with intention, not a template
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
