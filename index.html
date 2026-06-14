@@ -18,7 +18,7 @@
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#hero">saket_kumar.init()</a>
-  <div style="display: flex; align-items: center;">
+  <div style="display: flex; align-items: center; gap: 1rem;">
     <ul class="nav-links">
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -26,9 +26,22 @@
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <button id="theme-toggle" aria-label="Toggle theme">
+      <!-- Moon icon (shown in dark mode) -->
+      <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+      <!-- Sun icon (shown in light mode) -->
+      <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
       </svg>
     </button>
   </div>
@@ -37,7 +50,7 @@
 <!-- HERO -->
 <section id="hero" class="container hero">
   <p class="hero-eyebrow">// Bengaluru, India</p>
-  <h1 class="hero-name">Saket<br/>Kumar</h1>
+  <h1 class="hero-name">Saket Kumar</h1>
   <p class="hero-title">Senior Risk Manager — Model Governance &amp; Credit Risk</p>
   <p class="hero-desc">
     I build risk systems that work at scale — from scorecards that rank millions of customers to exposure frameworks that make every credit limit defensible. Currently at Kotak Mahindra Bank on the Model Governance team, sitting at the intersection of credit risk, data science, and regulatory compliance.
@@ -308,15 +321,44 @@
 <!-- CONTACT -->
 <section id="contact" class="reveal">
   <div class="container" style="padding-top: 0; padding-bottom: 0;">
-    <p class="section-label" style="justify-content: center; margin-bottom: 1.5rem;">
-      <span style="display:none"></span>05 — Contact<span style="display:none"></span>
-    </p>
-    <h2>Let's connect</h2>
-    <p>Open to senior risk modeling and data science conversations. Best reached on LinkedIn or email.</p>
-    <div class="btn-group" style="justify-content: center;">
-      <a class="btn btn-primary" href="mailto:bond.saketkumar@gmail.com">bond.saketkumar@gmail.com</a>
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/saket06" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a class="btn btn-ghost" href="https://github.com/saketkr06" target="_blank" rel="noopener">GitHub ↗</a>
+    <p class="section-label" style="justify-content: center; margin-bottom: 1.5rem;">05 — Contact</p>
+    <h2 style="text-align:center;">Let's connect</h2>
+    <p style="text-align:center; margin-bottom: 3rem;">Open to senior risk modeling and data science conversations.</p>
+    <div class="contact-cards">
+
+      <a class="contact-card" href="mailto:bond.saketkumar@gmail.com">
+        <div class="contact-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </div>
+        <p class="contact-card-label">Email</p>
+        <p class="contact-card-value">bond.saketkumar@gmail.com</p>
+      </a>
+
+      <a class="contact-card" href="https://www.linkedin.com/in/saket06" target="_blank" rel="noopener">
+        <div class="contact-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </div>
+        <p class="contact-card-label">LinkedIn</p>
+        <p class="contact-card-value">in/saket06</p>
+      </a>
+
+      <a class="contact-card" href="https://github.com/saketkr06" target="_blank" rel="noopener">
+        <div class="contact-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </div>
+        <p class="contact-card-label">GitHub</p>
+        <p class="contact-card-value">saketkr06</p>
+      </a>
+
     </div>
   </div>
 </section>
