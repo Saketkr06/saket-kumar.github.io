@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saket Kumar — Model Governance & ML</title>
   
-  <meta name="description" content="Portfolio of Saket Kumar, Senior Risk Manager in Model Governance and Credit Risk based in Bengaluru, India." />
+  <meta name="description" content="Portfolio of Saket Kumar, Senior Risk Manager — Model Governance & Credit Risk at Kotak Mahindra Bank, Bengaluru, India. ₹550 Cr+ delivered via ML-driven credit scorecards and exposure-management frameworks." />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,11 +62,11 @@
   <h1 class="hero-name">Saket Kumar</h1>
   <p class="hero-title">Senior Risk Manager — Model Governance &amp; Credit Risk</p>
   <p class="hero-desc">
-    Senior Risk Manager with around 2 years of experience in credit risk modeling, model governance, and data quality management. Skilled in developing machine learning solutions with a proven track record of driving impactful outcomes. Recognized with the <strong>Top Gun Award</strong> and <strong>Best Performer Award</strong> at Kotak for exceptional performance. Strong academic foundation from IISc, securing <strong>AIR-6 in GATE 2022</strong>.
+    Senior Risk Manager on the Model Governance team at Kotak Mahindra Bank with ~2 years of experience in credit risk modeling, model validation, and ML-driven decisioning across a consumer lending book. Delivered <strong>₹550 Cr+ incremental business</strong> via an MFI challenger scorecard (<strong>10% Gini lift</strong>) and built a bank-wide consumer exposure-cap framework productionized on Airflow. IISc Business Analytics (Distinction); <strong>GATE 2022 AIR-6</strong>; Top Gun &amp; Best Performer awards at Kotak.
   </p>
 
   <div class="btn-group">
-    <a class="btn btn-primary" href="Saket_Kumar_Resume.pdf" download>↓ Resume</a>
+    <a class="btn btn-primary" href="Saket_Kumar_Resume_August.pdf" download>↓ Resume</a>
     <a class="btn btn-ghost" href="mailto:bond.saketkumar@gmail.com">Email ↗</a>
     <a class="btn btn-ghost" href="https://www.linkedin.com/in/saket06" target="_blank" rel="noopener">LinkedIn ↗</a>
     <a class="btn btn-ghost" href="https://github.com/saketkr06" target="_blank" rel="noopener">GitHub ↗</a>
@@ -86,6 +86,8 @@
     <span class="ticker-item"><span>▸</span>Azure & AWS</span>
     <span class="ticker-item"><span>▸</span>Airflow DAGs</span>
     <span class="ticker-item"><span>▸</span>Streamlit & Power BI</span>
+    <span class="ticker-item"><span>▸</span>LightGBM & SHAP</span>
+    <span class="ticker-item"><span>▸</span>Scorecard Development</span>
     <!-- duplicate for seamless loop -->
     <span class="ticker-item"><span>▸</span>Credit Risk Modeling</span>
     <span class="ticker-item"><span>▸</span>Model Governance</span>
@@ -97,12 +99,18 @@
     <span class="ticker-item"><span>▸</span>Azure & AWS</span>
     <span class="ticker-item"><span>▸</span>Airflow DAGs</span>
     <span class="ticker-item"><span>▸</span>Streamlit & Power BI</span>
+    <span class="ticker-item"><span>▸</span>LightGBM & SHAP</span>
+    <span class="ticker-item"><span>▸</span>Scorecard Development</span>
   </div>
 </div>
 
 <!-- STATS -->
 <div class="container reveal" style="padding-top: 0; padding-bottom: 2rem;">
   <div class="stats-row">
+    <div class="stat-cell">
+      <div class="stat-num">₹550 Cr+</div>
+      <div class="stat-label">Incremental Business Delivered</div>
+    </div>
     <div class="stat-cell">
       <div class="stat-num">2</div>
       <div class="stat-label">Years of Professional Experience</div>
@@ -133,11 +141,15 @@
     <div>
       <p class="exp-role">Senior Risk Manager — Model Governance Team</p>
       <ul class="exp-bullets">
-        <li>Conducted research on leverage patterns and multi-bank funding exposure integrating macroeconomic indicators; prepared monthly economic outlook reports (CPI, GDP, PMI) presented in risk review forums.</li>
-        <li>Building PD forecasting models incorporating macroeconomic decision variables for portfolio management.</li>
-        <li>Built a Microfinance acquisition scorecard (MFI Challenger Model) achieving a 10% GINI lift over the benchmark with external validation approval; delivered ₹550 Cr+ incremental business; conducting monthly model monitoring with decile-wise performance analysis shared with the risk team.</li>
-        <li>Built a consumer-level exposure-cap framework from scratch and designed safe-limit expansion logic to correct under-leveraged and over-leveraged accounts across the consumer bank — deployed on an Airflow DAG pipeline across products (Secured, Unsecured Term, Revolving) using B-score risk tiers, affluence segments, and cohort P75 income multipliers with a 3-gate decisioning logic to set product-specific exposure limits.</li>
-        <li>Conducting model validation using univariate/bivariate analysis, SHAP, roll-rate analysis, and creating challenger models for continuous performance benchmarking.</li>
+        <li>Delivered <strong>₹550 Cr+ incremental business</strong> by building a challenger Microfinance acquisition model with <strong>10% Gini lift</strong> over the developer model at half the bad rate of ongoing models; secured external validation approval, deployed on Azure DevOps for automated scoring of the Kotak MFI portfolio, and run monthly decile-level performance monitoring shared with the risk team.</li>
+        <li><strong>Enterprise-wide Customer-Level Exposure Management Framework</strong> — designed a customer-level exposure management framework controlling aggregate credit exposure, parallel funding, and over-leveraging across Secured, Unsecured Term, and Revolving products, built on a 3-stage eligibility logic and a Risk-Affordability Grid (5 risk tiers × 5 income bands) preserving monotonic risk-based rank ordering.
+          <ul class="exp-bullets" style="margin-top: 0.5rem;">
+            <li>Engineered risk tiers via decision-tree modelling on ~15,000 bureau and banking variables across a 6.1 crore-customer development base; derived product-specific exposure multipliers — with differentiated CIBIL Thick/Thin treatment — using normalized bad-rate gradients, polynomial/exponential smoothing, and cohort-level exposure percentiles (P75).</li>
+            <li>Validated multipliers through EMI-to-income affordability analysis under product-specific rate and tenor assumptions; operationalized as an eligibility calculator productionized as an Airflow DAG on Azure for consistent, automated credit decisioning.</li>
+          </ul>
+        </li>
+        <li>Build PD forecasting models incorporating macroeconomic decision variables (CPI, GDP, PMI) for portfolio management; research on leverage patterns and multi-bank funding exposure presented as a monthly economic outlook in senior risk review forums.</li>
+        <li>Model validation — feature-level univariate/bivariate analysis, review of feature-creation code and feature definitions, monotonicity and PDP behaviour checks for alignment with stated risk hypotheses — with end-to-end model replication and documentation to build challenger models for continuous benchmarking.</li>
       </ul>
       <div class="tags-wrap">
         <span class="tag">Model Governance</span>
@@ -146,6 +158,7 @@
         <span class="tag">Airflow</span>
         <span class="tag">SHAP</span>
         <span class="tag">Credit Risk</span>
+        <span class="tag">Decision Trees</span>
       </div>
     </div>
   </div>
@@ -206,7 +219,7 @@
     <div class="project-card reveal">
       <p class="project-card-label">Model Governance &amp; Validation</p>
       <h3>MFI Challenger Scorecard</h3>
-      <p>Built a Microfinance acquisition scorecard using bureau and alternative data that achieved a 10% GINI lift over the benchmark. Delivered ₹550Cr+ in incremental business and implemented monthly monitoring.</p>
+      <p>Built a Microfinance acquisition scorecard using bureau and alternative data achieving a 10% Gini lift over the developer model at half the bad rate of ongoing models. Delivered ₹550 Cr+ in incremental business, deployed on Azure DevOps, with monthly decile-level monitoring.</p>
       <div class="tags-wrap">
         <span class="tag">Scorecards</span><span class="tag">Python</span><span class="tag">Model Validation</span>
       </div>
@@ -215,7 +228,7 @@
     <div class="project-card reveal">
       <p class="project-card-label">Modelling</p>
       <h3>Customer-Level Exposure Framework</h3>
-      <p>Designed safe-limit expansion logic and 3-gate decisioning to compute limits across Secured and Unsecured products. Fully automated the pipeline using an Apache Airflow DAG hosted on Azure.</p>
+      <p>Designed a Risk-Affordability Grid (5 risk tiers × 5 income bands) with 3-stage eligibility logic across Secured, Unsecured Term, and Revolving products, using decision-tree risk tiers on ~15,000 bureau/banking variables across 6.1 crore customers. Operationalized as an eligibility calculator on an Airflow DAG hosted on Azure.</p>
       <div class="tags-wrap">
         <span class="tag">Airflow</span><span class="tag">Azure</span><span class="tag">Decision Trees</span>
       </div>
@@ -239,6 +252,18 @@
       </div>
     </div>
 
+    <div class="project-card reveal">
+      <p class="project-card-label">Quant / Trading Systems</p>
+      <h3>BetaBot — NSE Swing/Breakout Scanner</h3>
+      <p>Automated daily scanner for the Nifty 500 universe running on GitHub Actions, with parallelized data ingestion, ML-based signal ranking validated via TimeSeriesSplit, and broker-API integration for unattended operation.</p>
+      <div class="tags-wrap">
+        <span class="tag">Python</span><span class="tag">GitHub Actions</span><span class="tag">ML Ranking</span>
+      </div>
+      <div class="tags-wrap" style="margin-top: 0.75rem;">
+        <a class="btn btn-ghost" href="https://github.com/Saketkr06" target="_blank" rel="noopener" style="padding: 0.4rem 0.9rem; font-size: 12px;">GitHub ↗</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -249,39 +274,46 @@
 
   <div class="skills-grid">
     <div class="skill-group reveal">
-      <p class="skill-group-label">Financial & Risk</p>
+      <p class="skill-group-label">Credit Risk</p>
       <div class="skill-chips">
-        <span class="chip">Credit Risk Modeling</span>
-        <span class="chip">PD/LGD Modeling</span>
+        <span class="chip">PD / LGD / EAD</span>
+        <span class="chip">Scorecard Development</span>
+        <span class="chip">WoE / IV</span>
+        <span class="chip">PSI / KS / Gini</span>
+        <span class="chip">Champion–Challenger</span>
+        <span class="chip">Model Validation & Governance</span>
+        <span class="chip">Roll-Rate Analysis</span>
         <span class="chip">Portfolio Analytics</span>
-        <span class="chip">Model Validation</span>
-        <span class="chip">Economics</span>
       </div>
     </div>
 
     <div class="skill-group reveal">
-      <p class="skill-group-label">Machine Learning & AI</p>
+      <p class="skill-group-label">ML / AI</p>
       <div class="skill-chips">
         <span class="chip">XGBoost</span>
-        <span class="chip">Random Forest</span>
-        <span class="chip">LLMs (TAPAS, RAG)</span>
+        <span class="chip">LightGBM</span>
+        <span class="chip">SHAP</span>
         <span class="chip">Time Series Forecasting</span>
-        <span class="chip">Regression & Classification</span>
+        <span class="chip">Deep Learning (LSTM)</span>
+        <span class="chip">LLMs & RAG (TAPAS, Qdrant, Cohere Reranker)</span>
+        <span class="chip">LangGraph</span>
+        <span class="chip">QLoRA</span>
       </div>
     </div>
 
     <div class="skill-group reveal">
-      <p class="skill-group-label">Programming & Tools</p>
+      <p class="skill-group-label">Stack</p>
       <div class="skill-chips">
         <span class="chip">Python</span>
-        <span class="chip">R</span>
-        <span class="chip">SAS</span>
         <span class="chip">SQL</span>
+        <span class="chip">SAS</span>
+        <span class="chip">R</span>
+        <span class="chip">Apache Airflow</span>
         <span class="chip">Azure</span>
         <span class="chip">AWS</span>
         <span class="chip">Power BI</span>
-        <span class="chip">Airflow</span>
         <span class="chip">Streamlit</span>
+        <span class="chip">Git / GitHub Actions</span>
       </div>
     </div>
   </div>
@@ -346,6 +378,16 @@
         </div>
         <p class="contact-card-label">Email</p>
         <p class="contact-card-value">bond.saketkumar@gmail.com</p>
+      </a>
+
+      <a class="contact-card" href="tel:+918744027158">
+        <div class="contact-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <p class="contact-card-label">Phone</p>
+        <p class="contact-card-value">+91 87440 27158</p>
       </a>
 
       <a class="contact-card" href="https://www.linkedin.com/in/saket06" target="_blank" rel="noopener">
